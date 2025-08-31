@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MOOD FOOD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Mood Food Section -->
+  <section class="mood-food">
+    <div class="container">
+      <div class="section-header animate-fade-in">
+        <div class="section-title">
+          <span class="emoji">🍽</span>
+          <h2>Good Food = Better Mood</h2>
+        </div>
+        <p>
+          Food isn't just nutrition, it's emotion. We help you eat better based on your mood &amp; mental health needs.
+        </p>
+      </div>
+
+      <div class="mood-selector" id="moodSelector">
+        <button class="mood-btn active" data-mood="stress">
+          <span class="mood-emoji">🌪</span>
+          <div class="mood-title">Stress / Anxiety</div>
+        </button>
+
+        <button class="mood-btn" data-mood="sadness">
+          <span class="mood-emoji">😔</span>
+          <div class="mood-title">Sadness / Low Mood</div>
+        </button>
+
+        <button class="mood-btn" data-mood="fatigue">
+          <span class="mood-emoji">😴</span>
+          <div class="mood-title">Fatigue / Exhaustion</div>
+        </button>
+
+        <button class="mood-btn" data-mood="anger">
+          <span class="mood-emoji">😡</span>
+          <div class="mood-title">Anger / Frustration</div>
+        </button>
+
+        <button class="mood-btn" data-mood="boredom">
+          <span class="mood-emoji">😐</span>
+          <div class="mood-title">Boredom / Emptiness</div>
+        </button>
+      </div>
+
+      <div class="mood-content" id="moodContent">
+        <!-- Content populated by JavaScript -->
+      </div>
+
+      <!-- Upload input -->
+  <input type="file" id="imageUploader" multiple accept="image/*">
+
+  <div id="moodContent"></div>
+
+      <div class="mood-cta animate-fade-in">
+        <h3>Personalized Nutrition Guidance</h3>
+        <p>Get customized meal plans and mood-boosting recipes delivered to your inbox.</p>
+        <button class="btn-primary">Get My Mood-Food Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
